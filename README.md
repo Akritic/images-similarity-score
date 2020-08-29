@@ -43,6 +43,8 @@ To run this project, install all its dependencies locally using requirements.txt
 
 	* Comparison file with positive records 
 	* Comparison file with rejected records 
+	
+![alt text](/Result.PNG)
 
 
 
