@@ -3,6 +3,8 @@
 * [Technologies](#technologies)
 * [Setup](#setup)
 * [Execution](#Execution)
+* [Output](#Output)
+
 
 
 ## General info (images-similarity-score)
