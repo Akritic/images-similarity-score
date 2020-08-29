@@ -51,7 +51,7 @@ To run this project, install all its dependencies locally using requirements.txt
 	
 ![alt text](/Result.PNG)
 
-#Output
+## Output
 
 ![alt text](/Output.PNG)
 
