@@ -8,8 +8,9 @@
 ## General info (images-similarity-score)
 This project is to find the visual similarity score between two images and the elapsed time to calculate the score . The input file will be csv file which will have 2 fields and conatin N pairs of images. Each field contains the absolute path to an image file.
 
-### Example 
+### Input 
 
+![alt text](/Input.csv)
 
 	
 ## Technologies
