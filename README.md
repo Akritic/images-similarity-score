@@ -10,7 +10,7 @@ This project is to find the visual similarity score between two images and the e
 
 ### Input 
 
-![alt text](/Input.csv)
+![alt text](/Input.PNG)
 
 	
 ## Technologies
