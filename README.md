@@ -29,12 +29,14 @@ To run this project, install all its dependencies locally using requirements.txt
 * Clone this repo to your local 
 * Run following command under same direcotory where repo is cloned
 
+![alt text](/triggerScript.PNG)
+
 
 ```
 #  python image_comparison.py 
 
 ```
-* It will prompt on the screen and ask for input file with absoulute path ( as per the following screenshot) 
+* It will prompt on the screen and ask for input file with absolute path ( as per the following screenshot) 
 
 * Provide absoulute path to your csv file
 * After that two files will be created in the following format at the same path 
