@@ -8,6 +8,8 @@ from datetime import datetime
 DEFAULT_REJECT_FILE = "Comparison_Rejection_"
 DEFAULT_FILE_PREFIX = 'Comparison_Results_'
 SUPPORTED_FILE_EXTENSION = set(['.PNG', '.JPG', '.GIF'])
+HEADERS = ['image1', 'image2', 'similar', 'elapsed']
+
 
 
 def write_to_file(image1, image2, similar_score, elapsed_time, output_file):
@@ -50,8 +52,12 @@ def compare_images(input_file=None):
 
     output_file_name = DEFAULT_FILE_PREFIX + datetime.now().strftime("%Y%m%d_%H%M%S%f") + '.csv'
     output_file = open(output_file_name, 'w')
+    writer = csv.writer(output_file)
+    writer.writerow(HEADERS)
     reject_file_name = DEFAULT_REJECT_FILE + datetime.now().strftime("%Y%m%d_%H%M%S%f") + '.csv'
     reject_file = open(reject_file_name, 'w')
+    writer = csv.writer(reject_file)
+    writer.writerow(HEADERS)
 
     for row in csv_reader:
 
