@@ -39,8 +39,8 @@ To run this project, install all its dependencies locally using requirements.txt
 * Provide absoulute path to your csv file
 * After that two files will be created in the following format at the same path 
 
-** Comparison file with positive records 
-** Comparison file with rejected records 
+	* Comparison file with positive records 
+	* Comparison file with rejected records 
 
 
 
