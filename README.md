@@ -12,7 +12,7 @@ This project is to find the visual similarity score between two images and the e
 
 ### Input 
 
-![alt text](/sources/Input.PNG)
+![alt text](.resources/Input.PNG)
 
 	
 ## Technologies
@@ -40,7 +40,7 @@ To run this project, install all its dependencies locally using requirements.txt
 ```
 * It will prompt on the screen and ask for input file with absolute path.
 
-![alt text](sources/triggerScript.PNG)
+![alt text](.resources/triggerScript.PNG)
 
 
 * Provide absoulute path to your csv file.
@@ -51,11 +51,11 @@ To run this project, install all its dependencies locally using requirements.txt
 	* Comparison file with rejected records 
 	
 	
-![alt text](sources/Result.PNG)
+![alt text](.resources/Result.PNG)
 
 ## Output
 
-![alt text](sources/Output.PNG)
+![alt text](.resources/Output.PNG)
 
 
 
