@@ -1,6 +1,7 @@
 import os
 from find_similarity_helper import find_similarity
 import csv
+import sys
 import time
 from datetime import datetime
 
@@ -8,7 +9,7 @@ from datetime import datetime
 DEFAULT_REJECT_FILE = "Comparison_Rejection_"
 DEFAULT_FILE_PREFIX = 'Comparison_Results_'
 SUPPORTED_FILE_EXTENSION = set(['.PNG', '.JPG', '.GIF'])
-HEADERS = ['image1', 'image2', 'similar', 'elapsed']
+HEADERS = 'image1, image2, similar, elapsed \n'
 
 
 
@@ -52,12 +53,9 @@ def compare_images(input_file=None):
 
     output_file_name = DEFAULT_FILE_PREFIX + datetime.now().strftime("%Y%m%d_%H%M%S%f") + '.csv'
     output_file = open(output_file_name, 'w')
-    writer = csv.writer(output_file)
-    writer.writerow(HEADERS)
+    output_file.write(HEADERS)
     reject_file_name = DEFAULT_REJECT_FILE + datetime.now().strftime("%Y%m%d_%H%M%S%f") + '.csv'
     reject_file = open(reject_file_name, 'w')
-    writer = csv.writer(reject_file)
-    writer.writerow(HEADERS)
 
     for row in csv_reader:
 
@@ -67,17 +65,20 @@ def compare_images(input_file=None):
 
         start_time = time.time()
         similarity_score = find_similarity(row[0], row[1])
-        print(similarity_score)
         elapsed_time = "%.3f" % (time.time() - start_time)
 
         write_to_file(row[0], row[1], similarity_score, elapsed_time, output_file)
 
     output_file.close()
     reject_file.close()
+    read_file.close()
     print("Results will be stored in file : {}".format(output_file_name))
     print("Rejected results stored in file : {}".format(reject_file_name))
 
 
 if __name__ == '__main__':
-    compare_images(input_file='C:\My Documents\My Practice\Loblaw\Input.csv')
-    # compare_images()
+
+    if len(sys.argv) >1 and sys.argv[1] == 'test':
+        compare_images('tests/test_input.csv')
+    else:
+        compare_images()

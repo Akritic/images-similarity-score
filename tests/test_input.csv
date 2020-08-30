@@ -1,0 +1,7 @@
+﻿Image1,Image2,Testcases
+tests/test_images/original_golden_bridge.jpg,tests/test_images/duplicate.png,Positive-compare duplicate images
+tests/test_images/george-washington-bridge.jpg,tests/test_images/duplicate.dmg,Negative-Not supported image extension
+tests/test_images/original_golden_bridge.jpg,tests/test_images/demonstration.png,Positive-compare different images
+tests/test_images/black_and_white.jpg,tests/test_images/original_golden_bridge.jpg,Positive-Black and white comparison
+tests/test_images/textured.jpg,tests/test_images/textured.png,Positive-Different extension of images
+tests/test_images/george-washington-bridge.jpg,tests/test_images/akriti.png,Negative-Not supported image extension
