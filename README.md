@@ -3,6 +3,7 @@
 * [Technologies](#technologies)
 * [Setup](#setup)
 * [Execution](#Execution)
+* [Unit Testing](#Test)
 * [Output](#Output)
 
 
@@ -19,6 +20,7 @@ This project is to find the visual similarity score between two images and the e
 Project is created with:
 * python version: 3.6
 * pip version: 10.0.1
+
 	
 ## Setup
 To run this project, install all its dependencies locally using requirements.txt:
@@ -27,12 +29,13 @@ To run this project, install all its dependencies locally using requirements.txt
 # pip install requirements.txt 
 
 ```
+
+
 ## Execution
 
 * Clone this repo to your local 
 
 * Run following command under same direcotory where repo is cloned.
-
 
 ```
 #  python image_comparison.py 
@@ -53,11 +56,19 @@ To run this project, install all its dependencies locally using requirements.txt
 	
 ![alt text](.resources/Result.PNG)
 
+
+## Test
+
+To run unit test cases , just provide an argument 'test' before running the script. It is going to execute the testcases written in input.csv file under tests and generate an output file.
+
+```
+#  python image_comparison.py test
+
+```
+![alt text](.resources/Test.PNG)
+
+
 ## Output
 
 ![alt text](.resources/Output.PNG)
-
-
-
-
 
