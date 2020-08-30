@@ -70,5 +70,7 @@ To run unit test cases , just provide an argument 'test' before running the scri
 
 ## Output
 
+After the execution is completed , elapsed and similar score are calculated , Script will provide the name of an output file generated as below.
+
 ![alt text](.resources/Output.PNG)
 
