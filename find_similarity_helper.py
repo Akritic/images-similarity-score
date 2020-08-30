@@ -8,6 +8,7 @@ def find_similarity(image1, image2):
     {str} image1: the path to an image file
     {str} image2: the path to an image file
   '''
+  
   # initialize the sift feature detector
   orb = cv2.ORB_create()
 
